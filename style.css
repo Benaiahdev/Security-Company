@@ -146,13 +146,27 @@ nav {
       #0f172a 100%
     ),
     url("images/hero.webp") center/cover no-repeat;
-  background-position: center top;
+  background-position: center middle;
   display: flex;
   align-items: flex-end;
   justify-content: center;
   text-align: center;
   padding: clamp(15px, 4vw, 25px);
   padding-bottom: clamp(40px, 10vw, 80px);
+}
+
+@media(min-width: 699px) {
+  .hero {
+    background:
+    linear-gradient(
+      to bottom,
+      rgba(0,0,0,0.2) 0%,
+      rgba(0,0,0,0.2) 88%,
+      #0f172a 100%
+    ),
+    url("images/big-hero.webp") center/cover no-repeat;
+    background-position: center top;
+  }
 }
 
 .hero-content {
